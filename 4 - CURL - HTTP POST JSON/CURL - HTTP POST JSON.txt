@@ -1,0 +1,12 @@
+To POST a JSON by curl we have to specify the Content-Type as application/json.
+
+curl -X POST -H "Content-Type: application/json" -d "{\"userId\" : 456, \"title\" : \"Dummy Lorem Ipsum\", \"completed\" : false}"  https://jsonplaceholder.typicode.com/todos
+
+Output
+
+{
+  "userId": 456,
+  "title": "Dummy Lorem Ipsum",
+  "completed": false,
+  "id": 201
+}

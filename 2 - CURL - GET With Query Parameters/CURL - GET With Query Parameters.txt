@@ -1,0 +1,14 @@
+We can also send query parameters along with the curl GET request.
+
+curl https://jsonplaceholder.typicode.com/todos?id=2
+
+output
+
+[
+  {
+    "userId": 1,
+    "id": 2,
+    "title": "quis ut nam facilis et officia qui",
+    "completed": false
+  }
+]

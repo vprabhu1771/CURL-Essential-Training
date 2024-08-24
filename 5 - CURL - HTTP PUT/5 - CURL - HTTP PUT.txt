@@ -1,0 +1,19 @@
+The PUT method is used to update or replace a resource on the server. It replaces all data of the specified resource with the supplied request data.
+
+Note: For a PUT request, we have to provide all data in the request body.
+
+To send a curl PUT request we use the option -X PUT.
+
+curl -X PUT -H "Content-Type: application/json" -d "{\"userId\" : 456, \"title\" : \"New Dummy Lorem Ipsum\", \"completed\" : true}"  https://jsonplaceholder.typicode.com/todos/200
+
+output
+
+{
+  "userId": 456,
+  "title": "New Dummy Lorem Ipsum",
+  "completed": true,
+  "id": 1
+}
+
+
+The above PUT request will replace our previously created post with “Dummy Lorem Ipsum” and “New Dummy Lorem Ipsum”.

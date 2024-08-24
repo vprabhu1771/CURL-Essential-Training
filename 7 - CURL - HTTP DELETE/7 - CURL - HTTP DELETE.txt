@@ -1,0 +1,6 @@
+The DELETE method is used to remove the specified resource from the server.
+
+To send a curl DELETE request we use the option -X DELETE.
+
+curl -X DELETE https://jsonplaceholder.typicode.com/todos/1
+{}

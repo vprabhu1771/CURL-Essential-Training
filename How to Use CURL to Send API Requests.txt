@@ -1,0 +1,1 @@
+https://devqa.io/curl-sending-api-requests/

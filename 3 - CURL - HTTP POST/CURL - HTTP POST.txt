@@ -1,0 +1,19 @@
+The POST method is used to create a resource on the server.
+
+To send a curl POST request we use the option -X POST.
+
+POST Form Data
+
+curl -X POST -d "userId=454&title=lorem quick sum&completed=true" https://jsonplaceholder.typicode.com/todos
+
+output
+
+{
+  "userId": "454",
+  "title": "lorem quick sum",
+  "completed": "true",
+  "id": 201
+}
+
+
+By default, curl uses Content-Type: application/x-www-form-urlencoded as the Content-Type header, so we don’t need to specify it when sending form data.

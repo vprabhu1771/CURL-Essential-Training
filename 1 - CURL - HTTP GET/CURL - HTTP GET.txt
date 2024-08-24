@@ -1,0 +1,12 @@
+The GET method is used to fetch a resource from a server. In curl, the GET method is the default method, so we don’t need to specify it.
+
+curl https://jsonplaceholder.typicode.com/todos/1
+
+output
+
+{
+  "userId": 1,
+  "id": 1,
+  "title": "delectus aut autem",
+  "completed": false
+}

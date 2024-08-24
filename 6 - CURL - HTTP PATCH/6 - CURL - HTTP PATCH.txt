@@ -1,0 +1,17 @@
+The PATCH method is used to make partial updates to the resource on the server.
+Note: For a PATCH request, we don't have to provide all data. We only send the data we want updated.
+
+To send a curl PATCH request we use the option -X PATCH.
+
+curl -X PATCH -H "Content-Type: application/json" -d "{\"userId\" : 456, \"title\" : \"New Dummy\"}"  https://jsonplaceholder.typicode.com/todos/200
+
+Output
+
+{
+  "userId": 456,
+  "id": 200,
+  "title": "New Dummy",
+  "completed": false
+}
+
+Notice how we are only sending the body with “New Dummy” as we are doing a partial update.
